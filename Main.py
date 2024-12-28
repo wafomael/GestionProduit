@@ -1,14 +1,7 @@
-from datetime import date
-
-from ConsoleAffichage import ConsoleAffichage
-from InMemoryStateMenue import InMemoryStateMenue
-from ProduitIntrouvableException import ProduitIntrouvableException
-from QuantiteInsufisanteException import QuantiteInsufisanteException
-from InMemoryProduitRepository import InMemoryProduitRepository
-from InMemoryVenteRepository import InMemoryVenteRepository
-from Produit import Produit
+from Gestion_stock.State.Impl.InMemory.Impl.InMemoryStateMenue import InMemoryStateMenue
+from Gestion_stock.Repository.impl.InMemoryProduitRepository import InMemoryProduitRepository
+from Gestion_stock.Repository.impl.InMemoryVenteRepository import InMemoryVenteRepository
 from Utilisateur import Utilisateur
-from Vente import Vente
 from Session import Session
 
 produit = InMemoryProduitRepository([])
